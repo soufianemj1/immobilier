@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+   
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #adb4c083;
+    border-radius: 100px;
+}
+
+/* navbar */
+.bars {
+    display: none;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px;
+    align-items: center;
+    
+}
+
+
+#logo img{
+    width: 60%;
+    
+}
+#sousnav a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: #182330;
+    
+}
+/* end navbar */
+
+.empty {
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #182330;
+    padding-bottom: 30px;
+    background-image: url(userimage/offres.jpg);
+    
+}
+.offres {
+    display: flex;
+    gap: 50px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+
+}
+.cartetotal {
+    flex: 1 0 30%; 
+    border: solid 1px #182330;
+    transition-duration: 0.7s;
+    box-shadow: 0px 0px 7px 1px rgba(211, 211, 211, 0.829);
+    color: #182330;
+    margin-top: 60px;
+}
+
+
+hr{
+   background-color: #182330;
+   
+}
+.cartetotal:hover {
+    transform: translateY(-20px);
+    
+
+
+}
+.cartetotal img{
+    width: 100%;
+}
+h5 {
+    padding: 10px 0;
+}
+p{
+    padding: 10px 0;
+}
+
+
+
+/* footer */
+.footer{
+	background-color: #041830;
+    padding: 70px 0;
+	color: white;
+    margin-top: 100px;
+}
+.footer a {
+    color: white;
+}
+.footer img{
+    filter: brightness(18);
+}
+@media only screen and (max-width: 800px){
+    
+    #sousnav {
+        
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70%;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 20px;
+         
+    }
+    #logo {
+        display: none;
+    }
+    
+   
+    .offres {
+        display: block;
+        gap: 50px;
+        padding: 0 40px;
+        flex-wrap: wrap;
+        text-align: center;
+        
+        
+    
+    }
+    
+}

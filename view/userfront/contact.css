@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+   
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #adb4c083;
+    border-radius: 100px;
+}
+
+/* navbar */
+.bars {
+    display: none;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px;
+    align-items: center;
+    
+}
+
+
+#logo img{
+    width: 60%;
+    
+}
+#sousnav a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: #182330;
+    
+}
+/* end navbar */
+
+.empty {
+    height: 35vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #182330;
+    padding-bottom: 30px;
+    
+}
+
+
+.totalcontactempty{
+    background-color: rgb(240, 243, 255);
+    padding: 5vh 0;
+    
+
+}
+.contacthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+  
+
+}
+.totalcontact{
+    background-image: url(userimage/rdv2.jpg);
+    background-repeat: no-repeat;
+    margin: 0 25vh;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 10vh;
+    opacity: 85%;
+}
+.totalcontactempty h1{
+   
+    
+    color: #182330;
+   
+}
+.totalcontactempty img{
+    width:20%;
+    
+}
+.contact {
+    display: flex;
+    color:white;
+    gap: 25vh;
+    justify-content: center;
+    padding-top: 17vh;
+    align-items: center;
+    border: none;
+}
+.infos input{
+    margin-top: 5px;
+    border: none;
+    width: 140%;
+    height: 38px;
+    border-radius: 5px;
+    
+}
+textarea{
+    border-radius: 5px;
+    height: 29vh;
+}
+.rdv input{
+    margin-top: 5px;
+    border: none;
+    width: 140%;
+    height: 38px;
+    border-radius: 5px;
+}
+
+.infos p{
+    margin-top:2px ;
+}
+#contactbutton{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    /* margin: px 0;  */
+    margin: 50px;  
+    cursor: pointer;
+    background-color:#182330b2;
+    color: white;
+}
+/* 
+.sfyan{
+    background-color:rgba(0, 0, 0, 0.5);
+} */
+
+
+/* footer */
+.footer{
+	background-color: #041830;
+    padding: 70px 0;
+	color: white;
+}
+.footer a {
+    color: white;
+}
+.footer img{
+    filter: brightness(18);
+}
+@media only screen and (max-width: 800px){
+    #sousnav {
+        
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70%;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 20px;
+         
+    }
+    .bars {
+        display: block;
+        margin-left: 95%;
+    }
+    
+    #logo {
+        display: none;
+    }
+    .totalcontact{
+        background-image: url(userimage/rdv2.jpg);
+        background-repeat: no-repeat;
+        margin: 0 3vh;
+        background-size: cover;
+        border-radius: 10px;
+        
+        margin-bottom: 10vh;
+        opacity: 85%;
+    }
+    .contact{
+        display: block;
+    }
+    .infos input{
+        margin-top: 5px;
+        border: none;
+        width: 100%;
+        height: 38px;
+        border-radius: 5px;
+        
+    }
+    
+}
