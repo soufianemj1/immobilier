@@ -252,20 +252,27 @@ a {
 
     
 }
-/* popup */
-.popup{
-    background-color:rgb(179, 172, 172);
-    padding-bottom: 10vh;
-    border-radius: 5px;
-    z-index: 1;
-    position: fixed;
-    top: 30vh;
-    display: none;
-    left: 33vh;
-    
-    
-}
 
+#imgdownloader img {
+    width: 20%;
+    margin-left: 38%;
+}
+.designdwn {
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lastform  input{
+    background-color: #032b44;
+    color: white;
+
+}
+#lastsubmit{
+    margin-top: 20PX;
+    text-align: center;
+}
 
 
 

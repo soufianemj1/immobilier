@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez-nous</title>
+    <title>Offres</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
     <section class="offres">
         <?php foreach ($offredata as $data) { ?>
         <div class="cartetotal">
-            <div><a href="photos.php"><img src="uploads/<?= $data['photos'] ?>" alt=""></a> </div>
+            <div><a href="http://localhost/mvcimmobilier/offre/details/<?= $data['id'] ?>"><img src="uploads/<?= $data['photos'] ?>" alt=""></a> </div>
             <div><h5><?= $data['type'] ?>, <?= $data['ville'] ?></h5></div>
             <hr>
             <div><p> <?= $data['description'] ?> </p></div>

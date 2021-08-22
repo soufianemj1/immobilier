@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>qui sommes-nous ?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
@@ -32,7 +32,6 @@
 
 
     <section class="first">
-    <!-- <div class="bars" ><img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"  /></div> -->
 
 
      <div class="animate__animated animate__fadeInDown"><h1>QUI SOMMES-NOUS?</h1></div>

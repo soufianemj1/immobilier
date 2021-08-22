@@ -36,7 +36,7 @@
             <div class="animate__animated animate__bounceInLeft">
                 <h1>Le logement ?</h1>
                 <h3>c'est nous qui l'offre avec les meilleurs prix.</h3>
-                <a href=""><button class="button">en savoir plus</button></a>
+                <a href="http://localhost/mvcimmobilier/view/about"><button class="button">en savoir plus</button></a>
             </div>
         </div>
 
@@ -137,7 +137,7 @@
         </div>
 
         <div class="prodbutton">
-            <a href=""><button>en savoir plus</button></a>
+            <a href="http://localhost/mvcimmobilier/offre"><button>en savoir plus</button></a>
         </div>
 
 

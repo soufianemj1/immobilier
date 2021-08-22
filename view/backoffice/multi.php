@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -22,7 +23,7 @@
 <body style="background-color: #F9F9F9;">
     <div class="admin">
     <div class="sidebar">
-            <div id="sb"><a href="overview.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            <div id="sb"><a href="http://localhost/mvcimmobilier/view/overview"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-grid">
                         <rect x="3" y="3" width="7" height="7"></rect>
@@ -56,15 +57,29 @@
 
 
         <div class="content">
-
-        <form action="">
-            <input type="file" multiple>
             
-            <input type="submit">
-        </form>
-        
+        <section class="designdwn">
+        <div id="imgdownloader">
+                <img src="http://localhost/mvcimmobilier/view/icones/offresdownload.png" alt="">
 
             </div>
+
+        <div class="lastform">
+        <form action="http://localhost/mvcimmobilier/offre/multiadd" method="post" enctype="multipart/form-data">
+
+            <input type="file" name='pictures[]' multiple>
+            <input type="hidden" name='id' value='<?php echo $id ?>'>
+
+            <div id="lastsubmit"><input type="submit" name="submit"></div>
+               
+        </form>
+
+
+        </div>
+        </section>
+        
+
+        </div>
 
 
 

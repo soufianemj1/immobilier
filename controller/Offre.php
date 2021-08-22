@@ -3,6 +3,7 @@ require __DIR__.'/../model/offresmodel.php';
 /**
  * 
  */
+session_start();
 class Offre
 {
 	
@@ -13,15 +14,18 @@ class Offre
 		require_once __DIR__.'/../view/userfront/offres.php';
 	}
 
-	// function create()
-	// {
-	// 	require_once __DIR__.'/../view/backoffice/offres.php';
-	// }
+	
 	function showadmin()
 	{
-		$offre= new Offresmodel;
-		$offredata = $offre->show();
-		require_once __DIR__.'/../view/backoffice/offres.php';
+		if(isset($_SESSION['Admin'])){
+			$offre= new Offresmodel;
+			$offredata = $offre->show();
+			require_once __DIR__.'/../view/backoffice/offres.php';
+
+		}else{
+			header('Location: http://localhost/mvcimmobilier/view/backoffice/loginpage.php');
+		}
+		
 
 
 	}
@@ -67,20 +71,42 @@ class Offre
 	}
 	
 	function multi(){
-		
+		$id = $_POST['id'];
 		require_once __DIR__.'/../view/backoffice/multi.php';
 
 	}
+	
+	function multiadd(){
+		$offre= new Offresmodel;
+		
+		if(isset($_POST["submit"])){
+					// store image
+        //get extension from the file
+        $files = $_FILES;
+		$count = count($files['pictures']['name']);
+        $filename = "";
+
+		for ($x=0; $x < $count; $x++){
+			//unique file name to avoid overwriting
+			$filename = time() . $files["pictures"]["name"][$x];
+
+			//move the uploaded file to folder
+			$upload =  move_uploaded_file($files["pictures"]["tmp_name"][$x], "uploads/" . $filename);
+			$id=$_POST["id"];
+			
+			$offre->insertphotos($id,$filename);
+			header('Location: http://localhost/mvcimmobilier/view/overview');
+			
+			
+		}
+		}
+	}
+
+	function details($id)
+	{   $query = new Offresmodel;
+		$data = $query->details($id);
+		require __DIR__."/../view/userfront/photos.php";
+	} 
 }
 
-// 	function edit($id)
-// 	{
-// 		echo "edit ".$id;
-// 	}
-
-// 	function update()
-// 	{
-// 		echo 'update';
-// 	}
-
-// 
+ 

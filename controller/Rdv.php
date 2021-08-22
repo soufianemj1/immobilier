@@ -4,6 +4,7 @@ require __DIR__.'/../model/rdvmodel.php';
 /**
  * 
  */
+session_start();
 class Rdv
 {
 	
@@ -14,9 +15,17 @@ class Rdv
 
 	function show()
 	{
+		if(isset($_SESSION['Admin'])){
 		$rdv= new Rdvmodel;
 		$rdvdata=$rdv->show();
-		require __DIR__."/../view/backoffice/rdv.php";
+
+		require_once __DIR__.'/../view/backoffice/rdv.php';
+
+		}else{
+			header('Location: http://localhost/mvcimmobilier/view/backoffice/loginpage.php');
+		}
+
+		
 
 		
 	}

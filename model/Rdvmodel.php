@@ -20,7 +20,8 @@ class Rdvmodel {
 
         $sql="SELECT * FROM `rendezvous`";
         $query=$con->query($sql);
-        return  $query->fetchAll(PDO::FETCH_ASSOC);
+        $query = $query->fetchAll(PDO::FETCH_ASSOC);
+        return $query ;
         
     }
     function delete($id){

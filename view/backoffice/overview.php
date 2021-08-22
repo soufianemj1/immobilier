@@ -1,10 +1,11 @@
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://localhost/mvcimmobilier/view/backoffice/style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,7 +23,7 @@
 <body style="background-color: #F9F9F9;">
     <div class="admin">
     <div class="sidebar">
-            <div id="sb"><a href="overview.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            <div id="sb"><a href="http://localhost/mvcimmobilier/view/overview"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-grid">
                         <rect x="3" y="3" width="7" height="7"></rect>
@@ -62,7 +63,7 @@
                     <h2>jAAFAR IMMO</h2>
                 </div>
                 <div class="title">
-                    <h5>overview</h5>
+                    <h5><a href="http://localhost/mvcimmobilier/login/logout">Deconnecter</a></h5>
                 </div>
             </div>
         
@@ -74,7 +75,7 @@
                 </div>
 
                 <div id="dashimage">
-                    <img src="../icones/dashwork.png" alt="dashboardworker">
+                    <img src="http://localhost/mvcimmobilier/view/icones/dashwork.png" alt="dashboardworker">
                 </div>
                 
             </div>
@@ -82,17 +83,17 @@
             <div class="numbers">
                 <div>
                     <h6>Les messages:</h6>
-                    <div class="carre">10</div>
+                    <div class="carre"><?php echo $messages ?></div>
                 </div>
 
                 <div>
                     <h6>Les rendez-vous:</h6>
-                    <div class="carre">6</div>
+                    <div class="carre"><?php echo $rendezvous ?></div>
                 </div>
 
                 <div>
                     <h6>Les offres:</h6>
-                    <div class="carre">2</div>
+                    <div class="carre"><?php echo $offres ?></div>
                 </div>
 
                 

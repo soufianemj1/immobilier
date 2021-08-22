@@ -22,7 +22,7 @@
 <body style="background-color: #F9F9F9;">
     <div class="admin">
     <div class="sidebar">
-            <div id="sb"><a href="overview.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            <div id="sb"><a href="http://localhost/mvcimmobilier/view/overview"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-grid">
                         <rect x="3" y="3" width="7" height="7"></rect>
@@ -48,7 +48,7 @@
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-activity">
                         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                    </svg> les offres</a></div>
+                    </svg> Les offres</a></div>
 
         </div>
 
@@ -63,7 +63,7 @@
                     <h2>jAAFAR IMMO</h2>
                 </div>
                 <div class="title">
-                    <h5>Les messages</h5>
+                <h5><a href="http://localhost/mvcimmobilier/login/logout">Deconnecter</a></h5>
                 </div>
 
             </div>
